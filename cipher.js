@@ -10,16 +10,19 @@ const abecedario = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "á", 
 "é", "í", "ó", "ú"];
 
-//Es para probar. Luego "textoACifrar" recibe strings desde un input.
-let textoACifrar = "Hola como estás";
 
-let textoCifrado = "";
 
-let letraCifrada = "";
 
 
 /*CIFRAR TEXTO*/
-function cifrar(textoACifrar){
+function cifrar(){
+	let textoCifrado = "";
+
+	let letraCifrada = "";	
+
+
+	let textoACifrar = document.getElementById("cifrar").value;
+
 	textoACifrar = textoACifrar.toLowerCase();
 
 	for (let i = 0; i < textoACifrar.length; i++) {
@@ -57,26 +60,33 @@ function cifrar(textoACifrar){
 		
 }
 
-
-	//Cuando haga el sitio, cambiar el console.log por una caja que muestre el texto cifrado o un <p> común.
-	console.log(textoCifrado);
+	document.getElementById("descifrar").value = textoCifrado;
+	
 }
 
-cifrar(textoACifrar);
+
+function borrarCifrar() {
+	document.getElementById("cifrar").value = "";
+}
 
 
 
 
 /*DESCIFRAR TEXTO ==========================================================*/
-let textoADescifrar = "jqnc eqñq guvíu";
-
-let textoDescifrado = "";
-
-let letraDescifrada = "";
 
 
-function descifrar(textoADescifrar){
-	
+
+function descifrar(){
+	let textoADescifrar = "";
+
+	let textoDescifrado = "";
+
+	let letraDescifrada = "";
+
+
+
+	textoADescifrar = document.getElementById("descifrar").value;
+
 	for (let i = 0; i < textoADescifrar.length; i++) {
 		//... si encuentra un espacio, lo agrega al texto que se está cifrando:
 		if (textoADescifrar[i] === " ") {
@@ -107,11 +117,13 @@ function descifrar(textoADescifrar){
 			textoDescifrado += letraDescifrada;
 		}
 		
+	}
+	
+	document.getElementById("cifrar").value = textoDescifrado;
+	
 }
 
 
-	//Cuando haga el sitio, cambiar el console.log por una caja que muestre el texto descifrado o un <p> común.
-	console.log(textoDescifrado);
+function borrarDescifrar() {
+	document.getElementById("descifrar").value = "";
 }
-
-descifrar(textoADescifrar);

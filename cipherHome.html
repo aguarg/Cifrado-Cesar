@@ -17,34 +17,31 @@
         <h1>Cifrado César</h1>
     </header>
     
-    <!--Título, caja y botones para cifrar-->
+    <!--Cifrar-->
     <div class="contenedor_operaciones">
         <div class="operacion">
             <h3>Cifrar texto</h3>
-            <textarea id="cifrar" rows="5" cols="" rows="10" name="cifrar">
-                
-            </textarea>
+            <textarea id="cifrar" rows="5" cols="" rows="10"></textarea>
 
             <div>
-                <button type="submit">Cifrar</button>
-                <button type="submit">Borrar</button>
+                <button type="submit" onclick="cifrar()">Cifrar</button>
+                <button type="submit" onclick="borrarCifrar()">Borrar</button>
             </div>
         </div>
 
 
 
-        <!--Título, caja y botones para descifrar-->
+        <!--Descifrar-->
         <div class="operacion">
             <h3>Descifrar texto</h3>
-            <textarea id="descifrar" rows="5" cols="" rows="10" name="descifrar">
-                
-            </textarea>
+            <textarea id="descifrar" rows="5" cols="" rows="10"></textarea>
 
             <div>
-                <button type="submit">Descifrar</button>
-                <button type="submit">Borrar</button>
+                <button type="submit" onclick="descifrar()">Descifrar</button>
+                <button type="submit" onclick="borrarDescifrar()">Borrar</button>
             </div>
         </div>
+
     </div>    
 
 </body>
