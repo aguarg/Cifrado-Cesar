@@ -2,7 +2,7 @@
 /*Un Caesar's cipher, desplazando los valore 2 lugares hacia adelante*/
 
 /*PROBLEMAS/HACER:
-- Hacer el paso inverso: dado un texto cifrado desde otra caja, volverlo legible.
+
 
 */
 
@@ -11,7 +11,7 @@ const abecedario = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 "é", "í", "ó", "ú"];
 
 //Es para probar. Luego "textoACifrar" recibe strings desde un input.
-let textoACifrar = "texto último";
+let textoACifrar = "Hola como estás";
 
 let textoCifrado = "";
 
@@ -19,8 +19,6 @@ let letraCifrada = "";
 
 
 /*CIFRAR TEXTO*/
-/*Itera una cantidad de veces igual a los carcateres del string en la variable textoACifrar:*/
-
 function cifrar(textoACifrar){
 	textoACifrar = textoACifrar.toLowerCase();
 
@@ -31,8 +29,8 @@ function cifrar(textoACifrar){
 		}
 
 		/*Cifrado para el último elemento del arreglo: se le reasigna el índice 1, es decir,
-		se movió en el arreglo 2 lugares hacia la derecha y salió por la izquierda.*/
-		/*indexOf devuelve el índice del elemento dentro del arreglo, que sea igual a 
+		se movió en el arreglo 2 lugares hacia la derecha y "salió por la izquierda" del arreglo.*/
+		/*El método indexOf() devuelve el índice del elemento dentro del arreglo, que sea igual a 
 		lo que le pongamos entre (), en este caso, la letra [i] en "textoACifrar"*/	
 		else if (abecedario.indexOf(textoACifrar[i]) === (abecedario.length - 1)) {
 			let letraCifrada = abecedario[1];
@@ -70,7 +68,7 @@ cifrar(textoACifrar);
 
 
 /*DESCIFRAR TEXTO ==========================================================*/
-let textoADescifrar = "vgzvq bnvkñq";
+let textoADescifrar = "jqnc eqñq guvíu";
 
 let textoDescifrado = "";
 
@@ -86,22 +84,20 @@ function descifrar(textoADescifrar){
 		}
 
 		/*Descifrado para el último elemento del arreglo:*/
-		/*indexOf() devuelve el índice del elemento dentro del arreglo, que sea igual a 
-		lo que le pongamos entre (), en este caso, la letra [i] en "textoACifrar"*/	
 		else if (abecedario.indexOf(textoADescifrar[i]) === 1) {
 			let letraDescifrada = abecedario[(abecedario.length - 1)];
 			textoDescifrado += letraDescifrada;	
 			
 		}	
 
-		//Cifrado para el anteúltimo elemento del arreglo: se le reasigna el índice 0.
+		//Descifrado para el anteúltimo elemento del arreglo: 
 		else if (abecedario.indexOf(textoADescifrar[i]) === (0)) {
 			let letraDescifrada = abecedario[abecedario.length - 2];
 			textoDescifrado += letraDescifrada;
 		}
 		
-		/*Cifrado para el resto de las letras del string de la variable "textoACifrar": 
-		cambia el índice original de esa letra en el arreglo abecedario por el mismo + 2 y
+		/*Descifrado para el resto de las letras del string de la variable "textoACifrar": 
+		cambia el índice original de esa letra en el arreglo abecedario por el mismo - 2 y
 		devuelve esa letra del mismo arreglo*/ 
 		else {
 			let indiceLetra = abecedario.indexOf(textoADescifrar[i]);
@@ -114,7 +110,7 @@ function descifrar(textoADescifrar){
 }
 
 
-	//Cuando haga el sitio, cambiar el console.log por una caja que muestre el texto cifrado o un <p> común.
+	//Cuando haga el sitio, cambiar el console.log por una caja que muestre el texto descifrado o un <p> común.
 	console.log(textoDescifrado);
 }
 

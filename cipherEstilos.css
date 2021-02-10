@@ -1,0 +1,68 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+	background-color: gray;
+	
+}
+
+
+h1 {
+	color: red;
+}
+
+
+.contenedor_operaciones {
+	margin-left: 15%;
+	margin-right: 15%;
+	background-color: orange;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.operacion {
+	padding: 10px;
+	width: 40%;
+	background-color: yellow;
+	margin: 15px;
+	flex-direction: row;
+
+}
+
+
+
+
+textarea {
+	height: 100px;
+	resize: none;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+@media (max-width: 700px) {
+
+	.contenedor_operaciones {
+		margin: 0%;
+		background-color: orange;
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+
+	.operacion {
+		width: 100vh;
+		background-color: red;
+		
+	}
+
+
+
+}
