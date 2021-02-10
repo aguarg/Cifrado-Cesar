@@ -3,6 +3,7 @@
 
 /*PROBLEMAS:
 - No maneja los espacios. Reemplaza el " " por b.
+R1: agregar un if antes de todo con la condicion de que si encuentra un espacio, lo agregue al texto cifrado.
 
 */
 
