@@ -2,28 +2,27 @@
 /*Un Caesar's cipher, desplazando los valore 2 lugares hacia adelante*/
 
 /*PROBLEMAS/HACER:
-
+- ¿Agregar símbolos como , . : etc etc?
 
 */
 
 const abecedario = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", 
 "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "á", 
-"é", "í", "ó", "ú"];
+"é", "í", "ó", "ú", ",", ".", "?", "¿", "!", "¡", ";", "1", "2", "3", "4", "5",
+"6", "7", "8", "9", "0", "@",];
 
 
 
 
 
-/*CIFRAR TEXTO*/
+/*CIFRAR TEXTO================================================================*/
 function cifrar(){
 	let textoCifrado = "";
-
 	let letraCifrada = "";	
-
-
 	let textoACifrar = document.getElementById("cifrar").value;
 
 	textoACifrar = textoACifrar.toLowerCase();
+
 
 	for (let i = 0; i < textoACifrar.length; i++) {
 		//... si encuentra un espacio, lo agrega al texto que se está cifrando:
@@ -64,7 +63,7 @@ function cifrar(){
 	
 }
 
-
+/*Función para borrar la caja de texto con el texto a cifrar*/
 function borrarCifrar() {
 	document.getElementById("cifrar").value = "";
 }
@@ -73,16 +72,10 @@ function borrarCifrar() {
 
 
 /*DESCIFRAR TEXTO ==========================================================*/
-
-
-
 function descifrar(){
 	let textoADescifrar = "";
-
 	let textoDescifrado = "";
-
 	let letraDescifrada = "";
-
 
 
 	textoADescifrar = document.getElementById("descifrar").value;
@@ -123,7 +116,7 @@ function descifrar(){
 	
 }
 
-
+/*Función para borrar la caja de texto con el texto a descifrar*/
 function borrarDescifrar() {
 	document.getElementById("descifrar").value = "";
 }
