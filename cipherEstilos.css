@@ -28,7 +28,7 @@ img {
 
 
 h1 {
-	color: red;
+	color: #B71C1C;
 	text-align: center;
 	font-size: 3em;
 	vertical-align: middle;
@@ -47,19 +47,24 @@ h1 {
 .operacion {
 	padding: 10px;
 	width: 40%;
-	background-color: yellow;
+	background-color: #BDBDBD;
 	margin: 15px;
 	flex-direction: row;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 1.5%;
 
 }
 
+
 .material-icons {
-	vertical-align: middle;
-	display: inline; 
+		display: inline-block;
+		vertical-align: bottom;
+		color: #a60014;
 }
 
 h3 {
-	display: inline;
+	display: inline-block;
+	color: #a60014;
 }
 
 
@@ -95,13 +100,15 @@ textarea {
 
 	.contenedor_operaciones {
 		margin: 0%;
-		background-color: orange;
 		display: flex;
 		flex-wrap: wrap;
 	}
 
 	.operacion {
-		width: 100vh;
-		background-color: red;
+		width: 100vw;
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: 0;
 	}
 }
