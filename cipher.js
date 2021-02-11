@@ -1,6 +1,7 @@
-/*PROBLEMAS/HACER:
-
-
+/*
+Javascript:
+- No se puede hacer una función que cifre/descifre el texto apretando la tecla
+ENTER, porque el ENTER es para dejar un renglón en la caja y poder seguir escribiendo.
 */
 
 const abecedario = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", 
@@ -117,3 +118,5 @@ function descifrar(){
 function borrarDescifrar() {
 	document.getElementById("descifrar").value = "";
 }
+
+

@@ -49,7 +49,7 @@ h1 {
 
 .operacion {
 	padding: 10px;
-	width: 40%;
+	width: 70%;
 	background-color: #BDBDBD;
 	margin: 15px;
 	flex-direction: row;
@@ -69,11 +69,14 @@ h3 {
 	display: inline-block;
 	color: #a60014;
 	font-family: 'Roboto Slab', serif;
+	font-size: 1.2em;
+	
 }
 
 
 h6 {
-	font-family: sans-serif;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 0.8em;
 	margin-top: 5px;
 }
 
@@ -85,6 +88,16 @@ textarea {
 	margin-bottom: 10px;
 }
 
+
+button {
+	background-color: #a60014;
+	width: 100px;
+	height: 30px;
+	color: white;
+	border-style: none;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.1em;
+}
 
 
 
@@ -105,6 +118,7 @@ textarea {
 		margin-top: 5px;
 		margin-bottom: 5px;
 		width: auto;
+		
 	}
 
 	h1 {
