@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML5, CSS3, JavaScript">
     <title>Cifrado César</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     <link rel="stylesheet" href="cipherEstilos.css">
     <script type="text/javascript" src="cipher.js"></script>
@@ -14,15 +16,18 @@
 <body>
     
     <header>
-        <h1>Cifrado César</h1>
+        
+        <h1><img src="cesar.jpg" alt="Imagen de Julio César"> Cifrado César</h1>
     </header>
     
     <!--Cifrar-->
     <div class="contenedor_operaciones">
         <div class="operacion">
+            <i class="material-icons">lock_outline</i>
             <h3>Cifrar texto</h3>
+            <h6>Introduzca en la caja de abajo el texto a cifrar</h6>
             <textarea id="cifrar" rows="5" cols="" rows="10"></textarea>
-
+            
             <div>
                 <button type="submit" onclick="cifrar()">Cifrar</button>
                 <button type="submit" onclick="borrarCifrar()">Borrar</button>
@@ -33,9 +38,11 @@
 
         <!--Descifrar-->
         <div class="operacion">
+            <i class="material-icons">lock_open</i>
             <h3>Descifrar texto</h3>
+            <h6>Introduzca en la caja de abajo el texto a descifrar</h6>
             <textarea id="descifrar" rows="5" cols="" rows="10"></textarea>
-
+            
             <div>
                 <button type="submit" onclick="descifrar()">Descifrar</button>
                 <button type="submit" onclick="borrarDescifrar()">Borrar</button>

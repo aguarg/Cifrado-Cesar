@@ -1,8 +1,5 @@
-/*Caesar's cipher*/
-/*Un Caesar's cipher, desplazando los valore 2 lugares hacia adelante*/
-
 /*PROBLEMAS/HACER:
-- ¿Agregar símbolos como , . : etc etc?
+
 
 */
 
