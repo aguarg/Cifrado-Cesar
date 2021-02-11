@@ -4,6 +4,7 @@ padding: 0;
 box-sizing: border-box;
 }
 
+
 body {
 	background-color: gray;
 	
@@ -30,6 +31,7 @@ img {
 h1 {
 	color: #B71C1C;
 	text-align: center;
+	font-family: 'Cinzel', serif;
 	font-size: 3em;
 	vertical-align: middle;
 }
@@ -38,6 +40,7 @@ h1 {
 .contenedor_operaciones {
 	margin-left: 15%;
 	margin-right: 15%;
+	padding-bottom: 3%;
 	background-color: white;
 	display: flex;
 	justify-content: space-around;
@@ -65,6 +68,13 @@ h1 {
 h3 {
 	display: inline-block;
 	color: #a60014;
+	font-family: 'Roboto Slab', serif;
+}
+
+
+h6 {
+	font-family: sans-serif;
+	margin-top: 5px;
 }
 
 
@@ -80,6 +90,10 @@ textarea {
 
 /*MEDIA QUERIES===============================================================*/
 @media (max-width: 700px) {
+	html {
+	background-color: white;
+	}
+
 
 	header {
 		margin: 0%;
