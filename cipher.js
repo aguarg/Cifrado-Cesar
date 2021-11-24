@@ -4,7 +4,7 @@ Javascript:
 ENTER, porque el ENTER es para dejar un renglón en la caja y poder seguir escribiendo.
 */
 
-/*Los caracteres capaz de leer y descifrar:*/
+/*Los caracteres capaz de leer y cifrar/descifrar:*/
 const abecedario = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", 
 "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "á", 
 "é", "í", "ó", "ú", ",", ".", "?", "¿", "!", "¡", ";", "1", "2", "3", "4", "5",
